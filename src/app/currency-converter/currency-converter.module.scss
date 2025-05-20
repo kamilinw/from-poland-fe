@@ -1,0 +1,40 @@
+@use "../variables.scss";
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  background-color: variables.$primary-color;
+  color: variables.$text-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$primary-color-hover;
+  }
+}
+
+.input {
+  background-color: variables.$input-color;
+  color: variables.$text-color;
+  border: solid 1px variables.$input-border-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
